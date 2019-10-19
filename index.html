@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <meta charset = "utf-8">
+        <title>PathFind</title>
+        <link rel = "stylesheet" href="css/bootstrap.css">
+        <link rel = "stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div class="fluid-container">
+            <div class="row">
+                <div class="col-8"  id="window-grid">
+                    <canvas></canvas>
+                </div>
+
+                <div class="d-flex col-4 bg-light justify-content-center align-items-center">
+                    
+                    <div class= "d-flex">
+                        
+                            <form>
+                                <div class="form-group">
+                                    <label for="startNodeX">Start node X</label>
+                                    <input type = "number" class="form-control" name="startNodeX" id="startNodeX">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="startNodeY">Start node Y</label>
+                                        <input type = "number" class="form-control" name="startNodeY" id="startNodeY">
+                                    </div>
+             
+                                <div class="form-group">
+                                     <label for="endNodeX">End node X</label>
+                                     <input type = "number" class="form-control"  name="endNodeX" id="endNodeX">
+                                 </div>
+
+                                 <div class="form-group">
+                                        <label for="endNodeY">End node Y</label>
+                                        <input type = "number" class="form-control" name="endNodeY" id="endNodeY">
+                                    </div>
+                                 <button class='btn btn-success' id='btnSetNodes' type='button'> Set Nodes</button>
+                                 <button class='btn btn-info' id='btnGeneratePath' type='button'>Generate Path</button>
+
+                            </form>
+                           
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+    <script src = "js/node.js"></script>
+    <script src = "js/grid.js"></script>
+    <script src = "js/findPath.js"></script>
+    <script src = "js/index.js"></script>
+</html>
